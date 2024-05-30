@@ -110,7 +110,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		ImGui::Begin("Window");
 		ImGui::DragFloat3("CameraTranslate", &cameraTranslate.x, 0.01f);
 		ImGui::DragFloat3("CameraRotate", &cameraRotate.x, 0.01f);
-		
+		ImGui::DragFloat3("Triangle.V0", &triangle.vertices[0].x, 0.01f);
+		ImGui::DragFloat3("Triangle.V1", &triangle.vertices[1].x, 0.01f);
+		ImGui::DragFloat3("Triangle.V2", &triangle.vertices[2].x, 0.01f);
 		ImGui::DragFloat3("Segment.Origin", &segment.origin.x, 0.01f);
 		ImGui::DragFloat3("Segment.Diff", &segment.diff.x, 0.01f);
 		ImGui::End();
